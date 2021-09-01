@@ -2,7 +2,7 @@
  * @Author: Radon
  * @Date: 2021-07-27 20:35:17
  * @LastEditors: Radon
- * @LastEditTime: 2021-08-22 14:15:36
+ * @LastEditTime: 2021-09-01 14:32:39
  * @Description: 二叉树头文件
  */
 #include <iostream>
@@ -15,6 +15,7 @@ struct BinaryTreeNode {
 	int val;
 	BinaryTreeNode *left;
 	BinaryTreeNode *right;
+	BinaryTreeNode* parent;		//TEMP
 	BinaryTreeNode() : val(0), left(nullptr), right(nullptr) {}
 	BinaryTreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
 	BinaryTreeNode(int x, BinaryTreeNode *left, BinaryTreeNode *right) : val(x), left(left), right(right) {}
